@@ -1,0 +1,159 @@
+/* Main styling for the landing page */
+.landing-page {
+  height: 100vh;
+  width: 100vw;
+  background: url('assets/landing.png') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Logo Styling */
+.navbar {
+  position: absolute;
+  top: 2vh;
+  left: 3vw;
+  z-index: 100;
+}
+
+.logo {
+  width: 10vw; /* Adjust size to fit */
+  transition: transform 0.3s ease;
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Overlay to darken the background image */
+.landing-page::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay to make text more readable */
+  z-index: 1;
+}
+
+/* Centered content */
+.content {
+  z-index: 2;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Heading Styling */
+.content h1 {
+  font-size: 4vw;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  color: white; /* Keep primary heading white */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.highlight {
+  color: #ff6f00; /* Custom orange for "FLEX-AI" */
+}
+
+/* Subtext Styling */
+.content p {
+  font-size: 1.8vw;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+/* Buttons for login and signup */
+.buttons {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+button {
+  padding: 1.2em 2.5em;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.btn-login {
+  background-color: #005bbb; /* Blue for login */
+}
+
+.btn-signup {
+  background-color: #ff6f00; /* Orange for signup */
+}
+
+.btn-login:hover {
+  background-color: #004080; /* Darker blue on hover */
+}
+
+.btn-signup:hover {
+  background-color: #e65c00; /* Darker orange on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 6vw;
+  }
+
+  .content p {
+    font-size: 3vw;
+  }
+
+  button {
+    font-size: 4vw;
+    padding: 1em 2em;
+  }
+
+  .logo {
+    width: 15vw; /* Adjust size on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .content h1 {
+    font-size: 8vw;
+  }
+
+  .content p {
+    font-size: 4vw;
+  }
+
+  button {
+    font-size: 5vw;
+    padding: 1em 2em;
+  }
+
+  .logo {
+    width: 20vw;
+  }
+}

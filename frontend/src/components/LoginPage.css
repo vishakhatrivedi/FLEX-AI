@@ -1,0 +1,129 @@
+.login-page {
+  width: 25vw;
+  margin: 10vh auto;
+  padding: 3vh 2vw;
+  background-color: rgba(34, 47, 62, 0.95);
+  border-radius: 15px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  animation: fadeIn 1.5s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Add logo styling */
+.login-logo {
+  width: 10vw;   /* Adjust size as needed */
+  margin-bottom: 2vh;
+  animation: logoFadeIn 1.5s ease-in-out;
+}
+
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-page h1 {
+  font-size: 4vw;
+  margin-bottom: 1.5em;
+  color: #FF6F00;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.login-page input {
+  width: 90%;
+  padding: 1em;
+  margin: 1em 0;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-page input:focus {
+  background-color: rgba(0, 0, 0, 0);
+  outline: none;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.4);
+}
+
+.login-page button {
+  width: 100%;
+  padding: 1em;
+  background-color: #FF6F00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin-top: 1.5em;
+}
+
+.login-page button:hover {
+  background-color: #FFCC80;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
+
+.login-page button:active {
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-page {
+    width: 50vw;
+  }
+
+  .login-page h1 {
+    font-size: 5vw;
+  }
+
+  .login-logo {
+    width: 20vw;  /* Adjust logo size for smaller screens */
+  }
+
+  .login-page input {
+    font-size: 1em;
+  }
+
+  .login-page button {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 576px) {
+  .login-page {
+    width: 80vw;
+    padding: 2vh 4vw;
+  }
+
+  .login-page h1 {
+    font-size: 5vw;
+  }
+
+  .login-logo {
+    width: 30vw;  /* Adjust logo size for mobile screens */
+  }
+
+  .login-page input {
+    font-size: 1em;
+    padding: 0.8em;
+  }
+
+  .login-page button {
+    font-size: 1em;
+    padding: 0.8em;
+  }
+}

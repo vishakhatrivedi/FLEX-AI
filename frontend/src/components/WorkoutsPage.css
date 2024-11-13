@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.workouts-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+}
+
+h1 {
+  font-size: 2.8rem;
+  color: #ffd700;
+  margin-top: 20px; /* Adjusted to move down under the button */
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the button to position it in the top-left corner */
+.go-back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #1a1a3c;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.go-back-button:hover {
+  background-color: #333366;
+  transform: translateY(-3px);
+}
+
+.go-back-button:focus {
+  outline: none;
+}

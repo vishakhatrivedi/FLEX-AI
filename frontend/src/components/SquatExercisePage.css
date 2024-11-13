@@ -1,0 +1,139 @@
+/* Page layout */
+.squat-workout-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1a1a3c; /* Navy blue background */
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Left section styling */
+.squat-left-section {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f3f; /* Dark navy background for contrast */
+  color: #ffcc80; /* Light yellow text */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.squat-left-section h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffcc80; /* Light yellow text */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Video container */
+.video-container {
+  width: 100%;
+  height: calc(100vh - 150px); /* Adjust height to fit nicely with padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exercise-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure video covers the container */
+  border: 3px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Right section styling */
+.squat-right-section {
+  background-color: #1f1f3f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling */
+.start-squat-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.start-squat-btn:hover {
+  background-color: #e67e00;
+  transform: translateY(-2px);
+}
+
+.squat-next-arrow-button {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: #ffcc80;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  transition: transform 0.2s ease;
+}
+
+.squat-next-arrow-button:hover {
+  transform: scale(1.1);
+}
+
+/* Divider styling */
+.squat-divider {
+  width: 2px;
+  background-color: #333;
+}
+
+/* Video feed container */
+.squat-video-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Prevents text from touching edges */
+  box-sizing: border-box;
+  background-color: #1f1f3f;
+  overflow: hidden;
+}
+
+.squat-video-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Keep video feed inside the container without cropping */
+  background-color: #1f1f3f;
+  border: 3px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Enhanced text visibility */
+.squat-video-container img::before {
+  content: "Adjust Position";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}

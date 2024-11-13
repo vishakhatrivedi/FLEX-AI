@@ -1,0 +1,129 @@
+/* Full page layout with navy blue background */
+.routine-page {
+  padding: 20px;
+  text-align: center;
+  background-color: #001f3f; /* Navy blue background */
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+/* Main Heading Styling */
+.routine-page h1 {
+  font-size: 3.5rem; /* Larger font size */
+  color: #ffcc00; /* Yellow color for the heading */
+  margin-bottom: 50px; /* Increased margin for spacing */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Text shadow for better contrast */
+}
+
+/* Start Workout Button */
+.start-workout-btn {
+  background-color: #ff8c00;
+  color: white;
+  padding: 15px 30px; /* Increased padding */
+  border: none;
+  font-size: 1.5rem; /* Larger font */
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 40px; /* Additional space below the button */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.start-workout-btn:hover {
+  background-color: #e67e00;
+  transform: translateY(-3px);
+}
+
+.start-workout-btn:active {
+  transform: translateY(0);
+}
+
+/* Exercise List Styling */
+.exercise-list {
+  list-style-type: none;
+  padding: 0;
+  font-size: 1.8rem; /* Larger font size for exercises */
+  width: 100%; /* Make the list take full width */
+  max-width: 800px; /* Limit the maximum width */
+}
+
+/* Exercise List Item Styling */
+.exercise-list li {
+  padding: 20px; /* Increased padding for larger containers */
+  margin: 15px 0; /* Increased margin between items */
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.15); /* Slightly darker background for contrast */
+  color: #ffcc00; /* Yellow text color for better visibility */
+  font-size: 1.5rem; /* Larger font size */
+  font-weight: bold; /* Make exercise names bold */
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Add an arrow icon on the left side of each exercise */
+.exercise-list li::before {
+  content: ">"; /* Arrow icon */
+  color: #ffcc00; /* Yellow color for visibility */
+  font-size: 1.8rem;
+  margin-right: 15px; /* Space between arrow and exercise name */
+}
+
+/* Hover effect for exercise list items */
+.exercise-list li:hover {
+  background-color: rgba(255, 140, 0, 0.3);
+  transform: scale(1.03);
+}
+
+.exercise-list li:active {
+  transform: scale(1);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .routine-page h1 {
+    font-size: 3rem;
+  }
+
+  .start-workout-btn {
+    font-size: 1.3rem;
+    padding: 12px 24px;
+  }
+
+  .exercise-list li {
+    font-size: 1.3rem;
+    padding: 18px;
+  }
+
+  .exercise-list li::before {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .routine-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .start-workout-btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  .exercise-list li {
+    font-size: 1.2rem;
+    padding: 16px;
+  }
+
+  .exercise-list li::before {
+    font-size: 1.3rem;
+  }
+}

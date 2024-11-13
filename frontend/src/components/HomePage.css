@@ -1,0 +1,198 @@
+/* Home Page Styling */
+.home-page {
+  height: 100vh;
+  width: 100vw;
+  background: url('./assets/bg-ui.png') no-repeat center center/cover;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  animation: fadeIn 1.5s ease-in-out;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 2vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-left: -8em;
+  z-index: 100;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.logo {
+  width: 8vw;
+  height: auto;
+  margin-left: 2vw;
+}
+
+/* Adjusted Navbar Title Styling */
+.navbar h1 {
+  font-size: 3vw;
+  font-weight: bold;
+  letter-spacing: 0.3em;
+  color: #ff6f00;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar h1:hover {
+  color: #ffcc80;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5vw; /* Reduce gap between links to save space */
+}
+
+.nav-links a {
+  font-size: 1.2vw; /* Slightly reduced font size */
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffcc80;
+  transform: translateY(-0.2em);
+}
+
+/* Content Styling */
+.content {
+  text-align: center;
+  margin-top: 25vh;
+  padding: 0 5vw;
+}
+
+.content h1 {
+  font-size: 6vw;
+  font-weight: 700;
+  color: white;
+  letter-spacing: 0.2em;
+  animation: slideIn 2s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-5vh);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Highlighted Text Styling */
+.highlight {
+  color: #ff6f00;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.highlight:hover {
+  color: #ffcc80;
+  transform: scale(1.05);
+}
+
+/* Workout Button Styling */
+.workout-btn {
+  padding: 2vh 5vw;
+  background-color: #ff6f00;
+  color: white;
+  border-radius: 50px;
+  font-size: 2vw;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 5vh;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.workout-btn:hover {
+  background-color: #ffcc80;
+  box-shadow: 0 1vh 2vh rgba(0, 0, 0, 0.4);
+}
+
+.workout-btn::before {
+  content: "";
+  position: absolute;
+  width: 300%;
+  height: 300%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+  transition: width 0.6s ease, height 0.6s ease, opacity 0.6s ease;
+  opacity: 0;
+}
+
+.workout-btn:active::before {
+  width: 0;
+  height: 0;
+  opacity: 1;
+  transition: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar h1 {
+    font-size: 4vw;
+  }
+
+  .nav-links a {
+    font-size: 2.5vw;
+  }
+
+  .content h1 {
+    font-size: 8vw;
+  }
+
+  .workout-btn {
+    font-size: 3vw;
+    padding: 2vh 4vw;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar h1 {
+    font-size: 5vw;
+  }
+
+  .nav-links a {
+    font-size: 3vw;
+  }
+
+  .content h1 {
+    font-size: 10vw;
+  }
+
+  .workout-btn {
+    font-size: 3.5vw;
+    padding: 2vh 4vw;
+  }
+}
