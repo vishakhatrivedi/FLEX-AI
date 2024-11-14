@@ -26,6 +26,80 @@ What you need to install the software:
 
 ## Installation
 
+```markdown
+# FLEX-AI Installation Guide
+
+## Prerequisites
+- Git
+- Node.js and npm
+- Python 3.x
+- MongoDB (if applicable)
+
+## Setup Instructions
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/yourusername/FLEX-AI.git
+   cd FLEX-AI
+   ```
+2. **Install Git LFS (if required for large files)**
+   - **macOS:**
+     ```bash
+     brew install git-lfs
+     git lfs install
+     ```
+   - **Windows:**
+     ```plaintext
+     Download and install Git LFS from https://git-lfs.github.com/.
+     After installation, initialize Git LFS:
+     git lfs install
+     ```
+3. **Install Backend Dependencies**
+   ```bash
+   cd backend
+   npm install
+   python3 -m venv venv
+   source venv/bin/activate  # On Windows, use venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+4. **Install Frontend Dependencies**
+   ```bash
+   cd ../frontend
+   npm install
+   ```
+5. **Environment Variables**
+   - Create a `.env` file in both the frontend and backend folders.
+   - **Backend `.env` (backend/.env)**
+     ```plaintext
+     DATABASE_URL=your_database_url
+     JWT_SECRET=your_jwt_secret
+     ```
+   - **Frontend `.env` (frontend/.env)**
+     ```plaintext
+     REACT_APP_API_URL=http://localhost:5000
+     ```
+6. **Run the Backend Server**
+   ```bash
+   npm start
+   # For Python-based backend, you may need to run:
+   flask run
+   # or
+   python app.py
+   ```
+7. **Run the Frontend Server**
+   ```bash
+   npm start
+   # This will start the frontend development server, usually accessible at http://localhost:3000.
+   ```
+8. **Additional Tools (if applicable)**
+   - Make sure MongoDB is installed and running if required for the backend.
+   - Ensure Node.js and npm are installed.
+
+### Additional Notes
+- Replace `yourusername` in the git clone URL with your GitHub username.
+- Customize paths and variables according to your project requirements.
+- Mention any other required installations or configurations specific to your project.
+  
+
 ## Usage
 
 Once the application is running:
