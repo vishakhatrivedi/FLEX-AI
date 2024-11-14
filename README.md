@@ -24,6 +24,8 @@ What you need to install the software:
 - JavaScript
 - MongoDB Atlas
 
+### Installation
+
 ## Usage
 
 Once the application is running:
