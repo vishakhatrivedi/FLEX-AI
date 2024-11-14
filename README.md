@@ -8,9 +8,9 @@ This project leverages Google's MediaPipe framework to develop a real-time fitne
 - **Real-Time Pose Estimation**: Utilizes MediaPipe's BlazePose for detecting 33 body landmarks with high precision.
 - **Angle Calculation**: Employs trigonometric methods to calculate the angles between joints like hips, knees, and ankles.
 - **Dynamic Feedback System**: Provides users with real-time feedback on their exercise form to minimize the risk of injury and maximize the effectiveness of their workout.
-![Screenshot 2024-10-29 191822](https://github.com/user-attachments/assets/8b4bba1d-efdc-4130-8772-752d5fae59dc)
-![image](https://github.com/user-attachments/assets/f31f34d1-364e-475d-88ce-4e8eb3660b53)
-![image](https://github.com/user-attachments/assets/bd5c108b-e622-438d-9c6b-cd6754fb13c9)
+![Screenshot 2024-10-29 191822](https://github.com/user-attachments/assets/4b0e2e8a-2321-4ca8-86fa-e99bae141312)
+![image](https://github.com/user-attachments/assets/66a7e010-3f0c-4323-98e6-68e75ac52e5e)
+![image](https://github.com/user-attachments/assets/59dc6e81-6883-4e50-96fb-6c9429d75982)
 
 
 ### Prerequisites
