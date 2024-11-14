@@ -26,7 +26,7 @@ What you need to install the software:
 
 ## Installation
 
-```markdown
+
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/FLEX-AI.git
@@ -89,7 +89,7 @@ What you need to install the software:
 - Replace `yourusername` in the git clone URL with your GitHub username.
 - Customize paths and variables according to your project requirements.
 - Mention any other required installations or configurations specific to your project.
-  
+
 
 ## Usage
 
