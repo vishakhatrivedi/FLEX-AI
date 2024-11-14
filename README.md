@@ -27,15 +27,6 @@ What you need to install the software:
 ## Installation
 
 ```markdown
-# FLEX-AI Installation Guide
-
-## Prerequisites
-- Git
-- Node.js and npm
-- Python 3.x
-- MongoDB (if applicable)
-
-## Setup Instructions
 1. **Clone the Repository**
    ```bash
    git clone https://github.com/yourusername/FLEX-AI.git
